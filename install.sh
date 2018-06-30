@@ -58,5 +58,9 @@ echo 'Install and Restart Fail2Ban...'
 echo -e $TEXT_RESET
 
 echo -e $TEXT_RED_B
-echo 'Reboot required!'
+echo 'Install Complete - Rebooting your VPS!'
 echo -e $TEXT_RESET
+
+yes | sudo reboot
+
+
