@@ -53,7 +53,6 @@ echo -e $TEXT_RESET
 yes | sudo apt-get install fail2ban
 yes | sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 yes | sudo service fail2ban restart
-yes | sudo service fail2ban status
 echo -e $TEXT_YELLOW
 echo 'Install and Restart Fail2Ban...'
 echo -e $TEXT_RESET
