@@ -3,7 +3,12 @@
 TEXT_RESET='\e[0m'
 TEXT_YELLOW='\e[0;33m'
 TEXT_RED_B='\e[1;31m'
-SSH_PORT=22
+
+echo -e $TEXT_YELLOW
+echo 'Adding 4GB Swap....'
+echo -e $TEXT_RESET
+wget https://raw.githubusercontent.com/Cretezy/Swap/master/swap.sh -O swap
+sh swap 4G
 
 sudo apt-get update -y
 echo -e $TEXT_YELLOW
