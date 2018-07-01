@@ -40,6 +40,12 @@ echo -e $TEXT_YELLOW
 echo 'Port 22 allowed...'
 echo -e $TEXT_RESET
 
+echo -e $TEXT_YELLOW
+echo 'Which port would you like to open...'
+echo -e $TEXT_RESET
+read -p 'Port?: ' portvar
+sudo ufw allow $portvar/tcp
+
 yes | sudo ufw enable
 echo -e $TEXT_YELLOW
 echo 'UFW Enabled...'
