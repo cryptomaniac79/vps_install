@@ -32,7 +32,7 @@ echo -e $TEXT_RESET
 
 yes | sudo ufw default allow outgoing
 echo -e $TEXT_YELLOW
-echo 'UFW - Allow incoming...'
+echo 'UFW - Allow outgoing...'
 echo -e $TEXT_RESET
 
 sudo ufw allow ssh
