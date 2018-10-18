@@ -68,10 +68,17 @@ echo -e $TEXT_YELLOW
 echo 'Install and Restart Fail2Ban...'
 echo -e $TEXT_RESET
 
-echo -e $TEXT_RED_B
-echo 'Install Complete - Rebooting your VPS!'
+echo -e $TEXT_GREEN
+echo 'Installing MRQ....'
 echo -e $TEXT_RESET
+wget https://raw.githubusercontent.com/WG91/MasterNode-scripts/master/MRQ_install.sh
+chmod +x MRQ_install.sh
+./MRQ_install.sh
 
-yes | sudo reboot
+#echo -e $TEXT_RED_B
+#echo 'Install Complete - Rebooting your VPS!'
+#echo -e $TEXT_RESET
+
+#yes | sudo reboot
 
 
